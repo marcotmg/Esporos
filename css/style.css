@@ -162,9 +162,9 @@ h3 {
 .contenidoPerfil__especializados {
     color: var(--blanco);
     grid-column: 3 / 4;
-    margin-right: 28rem;
-    font-size: 5rem;
-    font-weight: 400;
+    margin-right: 40rem;
+    font-size: 6rem;
+    font-weight: 100;
     text-align: left;
 }
 .contenidoPerfil__informacion span {
