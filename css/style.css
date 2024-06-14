@@ -6,6 +6,10 @@
     --negro: #000;
     --activo: #FC4C02;
     --sombra: rgba(50, 50, 50, .6);
+<<<<<<< HEAD
+=======
+    --estela: rgba(239, 231, 230, .3);
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 
     --fuentePrincipal: 'Roboto', sans-serif;
 }
@@ -18,9 +22,12 @@ html {
 }
 
 /** Scroll Snap **/
-.perfil,
-.quienesSomos,
 .navegacion,
+.perfil,
+.contenidoDondeEstamos,
+.contenidoQueOfrecemos,
+.servicios,
+.especializados,
 .footer {
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -120,8 +127,37 @@ h3 {
     max-width: 80rem;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 .contenedor--nav {
     max-width: 130rem;
+=======
+.contenedor__footer {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.sombra1 {
+    position: absolute;
+    background-color: var(--sombra);
+    width: 100%;
+    height: 50%;
+    top: 30%;
+}
+
+.sombra2 {
+    position: absolute;
+    background-color: var(--estela);
+    width: 100%;
+    height: 70%;
+    top: 17%;
+}
+
+.sombra3 {
+    position: absolute;
+    background-color: var(--sombra);
+    width: 100%;
+    height: 100%;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 }
 
 /*** NAVEGACION ***/
@@ -161,11 +197,12 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 87rem;
+    width: 144rem;
+    height: 85rem;
 }
 
 .perfil {
-    background-image: url(../img/Esporos01.jpg);
+    background-image: url(../img/Esporos04.png);
 }
 
 .dondeEstamos {
@@ -186,9 +223,8 @@ h3 {
 
 .contenidoPerfil {
     position: absolute;
-    top: 30%;
     display: grid;
-    grid-template-columns: 25rem 55rem 100rem;
+    grid-template-columns: 10% 35% 50% 5%;
     align-items: center;
 }
 
@@ -197,6 +233,7 @@ h3 {
     background-color: var(--primario);
 }
 
+<<<<<<< HEAD
 .contenidoPerfil__informacion {
     color: var(--blanco);
     grid-column: 3 / 4;
@@ -206,17 +243,30 @@ h3 {
     text-align: justify;
 }
 
+=======
+.contenidoPerfil__informacion,
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 .contenidoPerfil__especializados {
     color: var(--blanco);
+    margin-right: 10rem;
+    text-align: justify;
+}
+
+.contenidoPerfil__informacion {
+    grid-column: 3 / 5;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.contenidoPerfil__especializados {
     grid-column: 3 / 4;
-    margin-right: 40rem;
     font-size: 6rem;
     font-weight: 100;
-    text-align: left;
 }
 
 .contenidoPerfil__informacion span {
     color: var(--activo);
+<<<<<<< HEAD
 }
 
 .sombra {
@@ -241,35 +291,38 @@ h3 {
     width: 100%;
     height: 100%;
     /* top: 30%; */
+=======
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 }
 
 /* Dónde Estamos */
 .contenidoDondeEstamos {
     position: absolute;
-    top: 5%;
     display: grid;
-    grid-template-columns: 250px 550px 750px 250px;
-    grid-template-rows: 200px 421px;
+    grid-template-columns: 10% 35% 5% 45% 5%;
+    grid-template-rows: 35% 45% 20%;
     row-gap: 2rem;
-    align-items: center;
 }
 
 .contenidoDondeEstamos__logo {
-    grid-row: 2 / 2;
     grid-column: 2 / 3;
-    background-color: var(--primario);
+    grid-row: 2 / 3;
+    /* background-color: var(--primario); */
 }
 
 .contenidoDondeEstamos__imagen {
-    grid-row: 2 / 2;
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
 }
 
 .contenidoDondeEstamos__informacion {
-    grid-row: 1 / 1;
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
     color: var(--blanco);
+<<<<<<< HEAD
     margin: 10rem;
+=======
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     font-size: 2.8rem;
     font-weight: 400;
     text-align: justify;
@@ -278,8 +331,8 @@ h3 {
 /* Qué Ofrecemos */
 .contenidoQueOfrecemos {
     position: absolute;
-    top: 0;
     display: grid;
+<<<<<<< HEAD
     /* grid-template-columns: repeat(4, 450px); */
     grid-template-columns: 450px 450px repeat(2, 450px);
     grid-template-rows: repeat(5, 166px);
@@ -299,9 +352,28 @@ h3 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     padding: 0 5rem;
+=======
+    grid-template-columns: .5% 25% 20% 25% 25% 4.5%;
+    grid-template-rows: 10% 5% repeat(4, 17%);
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.contenidoQueOfrecemos__logo {
+    grid-column: 5 / 6;
+    grid-row: 4 / 6;
+    /* background-color: var(--primario); */
+    max-width: 90%;
+    padding-top: 5rem;
+}
+
+.contenidoQueOfrecemos__ico1 {
+    grid-column: 2 / 3;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 }
 
 .contenidoQueOfrecemos__ico2 {
+<<<<<<< HEAD
     grid-row: 1 / 2;
     grid-column: 3 / 4;
     padding: 0 5rem;
@@ -324,6 +396,29 @@ h3 {
     text-transform: uppercase;
     margin-top: 30%;
     margin-left: 5rem;
+=======
+    grid-column: 4 / 5;
+}
+.contenidoQueOfrecemos__ico1,
+.contenidoQueOfrecemos__ico2 {
+    grid-row: 1 / 2;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.contenidoQueOfrecemos__infico1 {
+    grid-column: 2 / 3;
+}
+.contenidoQueOfrecemos__infico2 {
+    grid-column: 4 / 5;
+}
+.contenidoQueOfrecemos__infico1,
+.contenidoQueOfrecemos__infico2 {
+    grid-row: 2 / 3;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 4rem;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     color: var(--blanco);
 }
 
@@ -334,21 +429,42 @@ h3 {
 .contenidoQueOfrecemos__informacion5,
 .contenidoQueOfrecemos__informacion6 {
     color: var(--blanco);
+<<<<<<< HEAD
     font-size: 1.8rem;
+=======
+    font-size: 2.3rem;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     font-weight: 100;
     text-align: left;
+    padding: 0 4rem;
+    margin: 0;
 }
 
 .contenidoQueOfrecemos__informacion1,
 .contenidoQueOfrecemos__informacion2,
 .contenidoQueOfrecemos__informacion3 {
-    margin-left: 5rem;
-    margin-right: 15rem;
+    grid-column: 2 / 3;
+    padding-top: 5rem;
 }
+<<<<<<< HEAD
+=======
+.contenidoQueOfrecemos__informacion1 {
+    grid-row: 3 / 4;
+}
+
+.contenidoQueOfrecemos__informacion2 {
+    grid-row: 4 / 5;
+}
+
+.contenidoQueOfrecemos__informacion3 {
+    grid-row: 5 / 6;
+}
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 
 .contenidoQueOfrecemos__informacion4,
 .contenidoQueOfrecemos__informacion5,
 .contenidoQueOfrecemos__informacion6 {
+<<<<<<< HEAD
     margin-left: 5rem;
     margin-right: 17rem;
 }
@@ -366,29 +482,52 @@ h3 {
 .contenidoQueOfrecemos__informacion3 {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
+=======
+    grid-column: 4 / 5;
+    padding-bottom: 5rem;
+
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 }
 
 .contenidoQueOfrecemos__informacion4 {
+<<<<<<< HEAD
     grid-row: 3 / 4;
     grid-column: 3 / 4;
 }
 
 .contenidoQueOfrecemos__informacion5 {
+=======
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     grid-row: 4 / 5;
-    grid-column: 3 / 4;
 }
 
+<<<<<<< HEAD
 .contenidoQueOfrecemos__informacion6 {
+=======
+.contenidoQueOfrecemos__informacion5 {
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     grid-row: 5 / 6;
-    grid-column: 3 / 4;
 }
 
+<<<<<<< HEAD
 .contenidoQueOfrecemos__informacion7 {
     grid-row: 2 / 5;
     grid-column: 2 / 3;
     font-size: 2rem;
     color: var(--activo);
     padding: 8rem 5rem;
+=======
+.contenidoQueOfrecemos__informacion6 {
+    grid-row: 6 / 7;
+}
+
+.contenidoQueOfrecemos__informacion7 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+    font-size: 2rem;
+    color: var(--activo);
+    padding: 10rem 2rem;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     text-transform: uppercase;
     background-color: var(--primario);
 }
@@ -398,14 +537,23 @@ h3 {
     position: absolute;
     display: grid;
     /* grid-template-columns: repeat(9, 17rem); */
+<<<<<<< HEAD
     grid-template-columns: repeat(4, 17rem) repeat(4, 20rem) 8rem;
     grid-template-rows: 20rem 66rem;
     gap: 1rem;
+=======
+    grid-template-columns: 2% repeat(2, 13%) 2% repeat(4, 15%) 2%;
+    grid-template-rows: 20rem 66rem;
+    gap: 2rem;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     text-transform: uppercase;
 }
 .contenidoServicios__logo {
-    grid-row: 2 / 3;
     grid-column: 2 / 4;
+<<<<<<< HEAD
+=======
+    grid-row: 2 / 3;
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     background-color: var(--menu);
 }
 .contenidoServicios__1,
@@ -418,7 +566,11 @@ h3 {
     padding: 2rem;
     font-size: 1.5rem;
     font-weight: 900;
+<<<<<<< HEAD
     background-color: var(--sombra);
+=======
+    background-color: var(--estela);
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
     text-align: end;
 }
 .contenidoServicios__1 {
@@ -441,9 +593,15 @@ h3 {
     color: var(--blanco);
     margin: 0;
     padding: 2rem;
+<<<<<<< HEAD
     font-size: 1.5rem;
     font-weight: 100;
     background-color: var(--sombra);
+=======
+    font-size: 2rem;
+    font-weight: 100;
+    background-color: var(--estela);
+>>>>>>> 1d0610c (Primera versión ESPOROS-PRODUCCIÓN 1.0 (menú horizontal, 5 pestañas: Perfil, Dónde, Qué, Servicios, Perfiles))
 }
 .contenidoServicios__5 {
     grid-column: 5 / 6;

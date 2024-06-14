@@ -1,2 +1,2 @@
 # Esporos
-# Página Web para www.esporos.com
+# Página Web - www.esporos.com
