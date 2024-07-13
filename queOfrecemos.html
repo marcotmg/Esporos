@@ -15,83 +15,101 @@
 </head>
 
 <body>
-    <div class="nav-bg">
-        <nav class="navegacion">
-            <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
-            <a class="navegacion__enlace" href="dondeEstamos.html">Dónde estamos</a>
-            <a class="navegacion__enlace--activo" href="queOfrecemos.html">Qué ofrecemos</a>
-            <a class="navegacion__enlace" href="servicios.html">Servicios</a>
-            <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
-        </nav>
-    </div> <!-- .nav-bg -->
-    <main>
-        <section class="caratula queOfrecemos">
+    <header class="header">
+        <div class="nav-bg">
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
+                <a class="navegacion__enlace" href="dondeEstamos.html">Dónde estamos</a>
+                <a class="navegacion__enlace--activo" href="queOfrecemos.html">Qué ofrecemos</a>
+                <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+                <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
+            </nav>
+        </div> <!-- .nav-bg -->
+    </header>
+
+    <main class="contenedor">
+        <section class="caratula queOfrecemos contenedor-grid">
             <div class="sombra2"></div>
+            <img class="queOfrecemos-logo" src="img/EsporosLogo01.png" alt="Esporos">
 
-            <div class="contenidoQueOfrecemos">
-                <img class="contenidoQueOfrecemos__logo" src="img/EsporosLogo01.png" alt="Logotipo">
+            <aside class="queOfrecemos-c1">
+                <div class="queOfrecemos__encabezado">
+                    <ion-icon name="business-outline"></ion-icon>
+                    <h4 class="queOfrecemos__encabezado-h4">Empresas</h4>
+                    <img class="queOfrecemos__encabezado-logo" src="img/EsporosLogo01.png" alt="Logotipo">
+                </div>
 
-                <img class="contenidoQueOfrecemos__ico1" src="img/empresa.png" alt="Empresa">
-                <p class="contenidoQueOfrecemos__infico1">
-                    Empresas
-                </p>
-                <img class="contenidoQueOfrecemos__ico2" src="img/tecnicos.png" alt="Servicios">
-                <p class="contenidoQueOfrecemos__infico2">
-                    Técnicos y profesionales
-                </p>
+                <div> <!-- Contenido C1 -->
+                    <p class="queOfrecemos__contenido">
+                        Acceso global a talento especializado, beneficiando a industrias con escasez de mano de obra
+                        técnica calificada.
+                    </p>
+                    <p class="queOfrecemos__contenido">
+                        Optimización de costos.
+                    </p>
+                    <p class="queOfrecemos__contenido">
+                        Mejora de los rendimientos laborales.
+                    </p>
+                </div>
 
-                <p class="contenidoQueOfrecemos__informacion1">
-                    Acceso global a talento especializado, beneficiando a industrias con escasez de mano de obra técnica
-                    y calificada.
-                </p>
-                <p class="contenidoQueOfrecemos__informacion2">
-                    Optimización de costos.
-                </p>
-                <p class="contenidoQueOfrecemos__informacion3">
-                    Mejora de los <br>rendimientos laborales.
-                </p>
-                <p class="contenidoQueOfrecemos__informacion4">
-                    Desarrollo profesional en proyectos enriquecedores en diversas industrias y ubicaciones.
-                </p>
-                <p class="contenidoQueOfrecemos__informacion5">
-                    Experiencia laboral internacional en un <br>equipo global.
-                </p>
-                <p class="contenidoQueOfrecemos__informacion6">
-                    Acceso a mercados laborales con mejores índices de remuneración.
-                </p>
-                
-                <p class="contenidoQueOfrecemos__informacion7">
-                    Soluciones globales <br>de<br>talento humano
-                </p>
-            </div> <!-- .contenidoQueOfrecemos -->
-        </section> <!-- perfil -->
+            </aside>
 
-        <h1>Collaborative Community</h1>
+            <h3 class="queOfrecemos__contenidoCentral">
+                Soluciones globales <br>de <br>talento humano
+            </h3>
+
+            <aside class="queOfrecemos-c2">
+                <div class="queOfrecemos__encabezado">
+                    <ion-icon name="construct-outline"></ion-icon>
+                    <h4 class="queOfrecemos__encabezado-h4--c2">Técnicos y profesionales</h4>
+                </div>
+
+                <div> <!-- Contenido C2 -->
+                    <p class="queOfrecemos__contenido">
+                        Desarrollo profesional en proyectos enriquecedores en diversas industrias y ubicaciones.
+                    </p>
+                    <p class="queOfrecemos__contenido">
+                        Experiencia laboral internacional en un equipo global.
+                    </p>
+                    <p class="queOfrecemos__contenido">
+                        Acceso a mercados laborales con mejores índices de remuneración.
+                    </p>
+                </div>
+
+            </aside>
+        </section> <!-- queOfrecemos -->
+
+        <!-- <h1>Collaborative Community</h1> -->
     </main>
+
     <footer class="footer">
         <div class="footer__grid contenedor__footer">
-            <div>
-                <p class="footer__encabezado">Legal</p>
+            <section class="legal">
+                <h4 class="footer__encabezado">Legal</h4>
                 <p class="footer__texto">Política de Privacidad</p>
                 <p class="footer__texto">Código de Conducta</p>
                 <p class="footer__texto">Canal de Denuncias</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Nosotros</p>
+            </section>
+            <section class="nosotros">
+                <h4 class="footer__encabezado">Nosotros</h4>
                 <p class="footer__texto">Quienes somos</p>
                 <p class="footer__texto">Equipo</p>
                 <p class="footer__texto">Servicios</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Contáctanos</p>
-                <img class="footer__imagen" src="img/FaceBook01.png" alt="Facebook">
-                <img class="footer__imagen" src="img/Instagram01.png" Instagram">
-                <img class="footer__imagen" src="img/X01.png" alt="X">
-                <img class="footer__imagen" src="img/WhatsApp01.png" alt="WhatsApp">
-            </div>
+            </section>
+            <section class="contacto">
+                <h4 class="footer__encabezado">Contáctanos</h4>
+                <div class="footer__iconos">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </section>
+            <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
         </div> <!-- .grid -->
-        <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
     </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

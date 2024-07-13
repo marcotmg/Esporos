@@ -15,55 +15,59 @@
 </head>
 
 <body>
-    <div class="nav-bg">
-        <nav class="navegacion">
-            <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
-            <a class="navegacion__enlace--activo" href="dondeEstamos.html">Dónde estamos</a>
-            <a class="navegacion__enlace" href="queOfrecemos.html">Qué ofrecemos</a>
-            <a class="navegacion__enlace" href="servicios.html">Servicios</a>
-            <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
-        </nav>
-    </div> <!-- .nav-bg -->
-    <main>
-        <section class="caratula dondeEstamos">
-            <div class="sombra1"></div>
-            <div class="contenidoDondeEstamos">
-                <img class="contenidoDondeEstamos__logo" src="img/EsporosLogo01.png" alt="Logotipo">
-                <img class="contenidoDondeEstamos__imagen" src="img/Esporos02_2.png" alt="Logotipo">
-                <p class="contenidoDondeEstamos__informacion">
-                    Con operaciones locales en México, Chile, Colombia y Portugal, brindamos un soporte completo en
-                    los mercados americanos y europeos, eliminando las limitaciones geográficas para tu búsqueda de
-                    talento.
-                </p>
-            </div>
-        </section> <!-- .dondeEstamos -->
+    <header class="header">
+        <div class="nav-bg">
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
+                <a class="navegacion__enlace--activo" href="dondeEstamos.html">Dónde estamos</a>
+                <a class="navegacion__enlace" href="queOfrecemos.html">Qué ofrecemos</a>
+                <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+                <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
+            </nav>
+        </div> <!-- .nav-bg -->
+    </header>
 
-        <h1>Collaborative Community</h1>
+    <main class="contenedor">
+        <section class="caratula dondeEstamos contenedor-grid">
+            <div class="sombra1"></div>
+            <img class="logo" src="img/EsporosLogo01.png" alt="Esporos">
+            <p class="dondeEstamos__contenido">
+                Con operaciones locales en México, Chile, Colombia y Portugal, brindamos un soporte completo en
+                los mercados americanos y europeos, eliminando las limitaciones geográficas para tu búsqueda de
+                talento.
+            </p>
+            <img class="dondeEstamos__imagen" src="img/Esporos02_2.png" alt="Logotipo">
+        </section> <!-- .dondeEstamos -->
     </main>
+
     <footer class="footer">
         <div class="footer__grid contenedor__footer">
-            <div>
-                <p class="footer__encabezado">Legal</p>
+            <section class="legal">
+                <h4 class="footer__encabezado">Legal</h4>
                 <p class="footer__texto">Política de Privacidad</p>
                 <p class="footer__texto">Código de Conducta</p>
                 <p class="footer__texto">Canal de Denuncias</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Nosotros</p>
+            </section>
+            <section class="nosotros">
+                <h4 class="footer__encabezado">Nosotros</h4>
                 <p class="footer__texto">Quienes somos</p>
                 <p class="footer__texto">Equipo</p>
                 <p class="footer__texto">Servicios</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Contáctanos</p>
-                <img class="footer__imagen" src="img/FaceBook01.png" alt="Facebook">
-                <img class="footer__imagen" src="img/Instagram01.png" Instagram">
-                <img class="footer__imagen" src="img/X01.png" alt="X">
-                <img class="footer__imagen" src="img/WhatsApp01.png" alt="WhatsApp">
-            </div>
+            </section>
+            <section class="contacto">
+                <h4 class="footer__encabezado">Contáctanos</h4>
+                <div class="footer__iconos">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </section>
+            <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
         </div> <!-- .grid -->
-        <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
     </footer>
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

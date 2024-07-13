@@ -4,83 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Especializados</title>
+    <title>Esporos</title>
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="nav-bg">
-        <nav class="navegacion navegacion">
-            <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
-            <a class="navegacion__enlace" href="dondeEstamos.html">Dónde estamos</a>
-            <a class="navegacion__enlace" href="queOfrecemos.html">Qué ofrecemos</a>
-            <a class="navegacion__enlace--activo" href="servicios.html">Servicios</a>
-            <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
-        </nav>
-    </div> <!-- .nav-bg -->
-    <main>
-        <section class="caratula servicios">
-            <div class="contenidoServicios">
-                <img class="contenidoServicios__logo" src="img/EsporosLogo01.png" alt="Logotipo">
-                <p class="contenidoServicios__1">
-                    1
-                </p>
-                <p class="contenidoServicios__2">
-                    2
-                </p>
-                <p class="contenidoServicios__3">
-                    3
-                </p>
-                <p class="contenidoServicios__4">
-                    4
-                </p>
-                <p class="contenidoServicios__5">
-                    Reclutamiento & <br>selección
-                </p>
-                <p class="contenidoServicios__6">
-                    Formación <br>del <br>talento humano
-                </p>
-                <p class="contenidoServicios__7">
-                    Gestión <br>del <br>talento humano
-                </p>
-                <p class="contenidoServicios__8">
-                    Consultoría <br>& <br>IHES
-                </p>
-            </div> <!-- .contenidoServicios -->
-        </section> <!-- perfil -->
+    <header class="header">
+        <div class="nav-bg">
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html">Perfil corporativo</a>
+                <a class="navegacion__enlace" href="dondeEstamos.html">Dónde estamos</a>
+                <a class="navegacion__enlace" href="queOfrecemos.html">Qué ofrecemos</a>
+                <a class="navegacion__enlace--activo" href="servicios.html">Servicios</a>
+                <a class="navegacion__enlace" href="especializados.html">Perfiles especializados</a>
+            </nav>
+        </div> <!-- .nav-bg -->
+    </header>
 
-        <h1>Collaborative Community</h1>
+    <main class="contenedor">
+        <section class="caratula servicios contenedor-grid">
+            <img class="servicios-logo" src="img/EsporosLogo01.png" alt="Esporos">
+
+            <div class="servicios1">
+                <div class="servicios__contenido">
+                    <h3 class="servicios1__contenido__id">1</h3>
+                    <p class="servicios1__contenido__valor">Reclutamiento & selección</p>
+                </div>
+            </div>
+
+            <div class="servicios2">
+                <div class="servicios__contenido">
+                    <h3 class="servicios2__contenido__id">2</h3>
+                    <p class="servicios2__contenido__valor">Formación del talento humano</p>
+                </div>
+            </div>
+
+            <div class="servicios3">
+                <div class="servicios__contenido">
+                    <h3 class="servicios3__contenido__id">3</h3>
+                    <p class="servicios3__contenido__valor">Gestión del talento humano</p>
+                </div>
+            </div>
+
+            <div class="servicios4">
+                <div class="servicios__contenido">
+                    <h3 class="servicios4__contenido__id">4</h3>
+                    <p class="servicios4__contenido__valor">Consultoría & IHES</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer__grid contenedor__footer">
-            <div>
-                <p class="footer__encabezado">Legal</p>
+            <section class="legal">
+                <h4 class="footer__encabezado">Legal</h4>
                 <p class="footer__texto">Política de Privacidad</p>
                 <p class="footer__texto">Código de Conducta</p>
                 <p class="footer__texto">Canal de Denuncias</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Nosotros</p>
+            </section>
+            <section class="nosotros">
+                <h4 class="footer__encabezado">Nosotros</h4>
                 <p class="footer__texto">Quienes somos</p>
                 <p class="footer__texto">Equipo</p>
                 <p class="footer__texto">Servicios</p>
-            </div>
-            <div>
-                <p class="footer__encabezado">Contáctanos</p>
-                <img class="footer__imagen" src="img/FaceBook01.png" alt="Facebook">
-                <img class="footer__imagen" src="img/Instagram01.png" Instagram">
-                <img class="footer__imagen" src="img/X01.png" alt="X">
-                <img class="footer__imagen" src="img/WhatsApp01.png" alt="WhatsApp">
-            </div>
+            </section>
+            <section class="contacto">
+                <h4 class="footer__encabezado">Contáctanos</h4>
+                <div class="footer__iconos">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </section>
+            <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
         </div> <!-- .grid -->
-        <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
     </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
