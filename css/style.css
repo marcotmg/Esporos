@@ -20,23 +20,13 @@ html {
 }
 
 /*** Scroll Snap ***/
-/* .header,
-.perfil,
-.dondeEstamos__contenido,
-.contenidoQueOfrecemos,
+.header,
+.perfilCorporativo,
+.dondeEstamos,
+.queOfrecemos,
 .servicios,
 .especializados,
 .footer {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-} */
-
-.header,
-.perfil,
-.dondeEstamos__contenido,
-.queOfrecemos,
-.servicios,
-.especializados {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
