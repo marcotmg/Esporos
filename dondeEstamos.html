@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dónde Estamos</title>
+    <title>Donde Estamos</title>
+
+    <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" crossorigin="crossorigin" as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/EsporosLogo01.png" as="image">
 </head>
 
 <body>
@@ -30,13 +37,13 @@
     <main class="contenedor">
         <section class="caratula dondeEstamos contenedor-grid">
             <div class="sombra1"></div>
-            <img class="logo" src="img/EsporosLogo01.png" alt="Esporos">
+            <img class="logo" src="img/EsporosLogo01.png" alt="Esporos" loading="lazy">
             <p class="dondeEstamos__contenido">
                 Con operaciones locales en México, Chile, Colombia y Portugal, brindamos un soporte completo en
                 los mercados americanos y europeos, eliminando las limitaciones geográficas para tu búsqueda de
                 talento.
             </p>
-            <img class="dondeEstamos__imagen" src="img/Esporos02_2.png" alt="Logotipo">
+            <img class="dondeEstamos__imagen" src="img/Esporos02_2.png" alt="Logotipo" loading="lazy">
         </section> <!-- .dondeEstamos -->
     </main>
 

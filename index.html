@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esporos</title>
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="especializados.html" as="document">
+
+    <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" crossorigin="crossorigin"
+        as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/a867de7361.js" crossorigin="anonymous"></script>
+
+    <!-- <link rel="preload" href="img/EsporosLogo01.png" as="image"> -->
 </head>
 
 <body>
@@ -28,46 +38,16 @@
         </div> <!-- .nav-bg -->
     </header>
 
-    <main class="contenedor">
-        <section class="caratula perfilCorporativo contenedor-grid">
-            <div class="sombra1"></div>
-            <img class="logo" src="img/EsporosLogo01.png" alt="Esporos">
+    <div class="contenedor">
+        <main class="logo">
+            <img src="img/EsporosLogo01.png" alt="Logo Esporos">
             <p class="contenidoPerfil">
-                Somos <span>ESPÓROS</span> y ofrecemos servicios profesionales de talento humano. Nos destacamos en
-                la búsqueda de perfiles especializados; combinando nuestro profundo conocimiento del mercado, con una
-                robusta cobertura internacional y amplia experiencia en la gestión de personal.
+                Somos <span>ESPÓROS</span> y ofrecemos servicios profesionales de talento humano. Nos especializamos en la búsqueda
+                de talento especializado, combinando un profundo conocimiento del mercado, una robusta cobertura y una
+                amplia experiencia en la gestión de personal
             </p>
-        </section> <!-- .perfilCorporativo -->
-    </main>
-
-    <footer class="footer">
-        <div class="footer__grid contenedor__footer">
-            <section class="legal">
-                <h4 class="footer__encabezado">Legal</h4>
-                <p class="footer__texto">Política de Privacidad</p>
-                <p class="footer__texto">Código de Conducta</p>
-                <p class="footer__texto">Canal de Denuncias</p>
-            </section>
-            <section class="nosotros">
-                <h4 class="footer__encabezado">Nosotros</h4>
-                <p class="footer__texto">Quienes somos</p>
-                <p class="footer__texto">Equipo</p>
-                <p class="footer__texto">Servicios</p>
-            </section>
-            <section class="contacto">
-                <h4 class="footer__encabezado">Contáctanos</h4>
-                <div class="footer__iconos">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                </div>
-            </section>
-            <p class="footer__copy">Esporos - Todos los derechos reservados 2024.</p>
-        </div> <!-- .grid -->
-    </footer>
-    
-    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+        </main>
+    </div>
 </body>
 
 </html>

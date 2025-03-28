@@ -4,6 +4,7 @@
     --blanco: #FFF;
     --negro: #000;
     --resaltado: #5E5E5E;
+    --bg-footer: #212121;
     --sombra: rgba(50, 50, 50, .3);
     --estela: rgba(239, 231, 230, .3);
     --activo: #FC4C02;
@@ -39,7 +40,6 @@ html {
 
 body {
     background-color: var(--primario);
-    /* font-size: 1.6rem; */
     line-height: 1.5;
 }
 
@@ -156,7 +156,13 @@ h4 {
 /*************** CONTENEDORES ***************/
 .contenedor {
     max-width: 1792px;
-    max-height: 1400px;
+    /* max-height: 1024px; */
+    /* max-height: 844px; */
+}
+@media (min-width: 768px) { 
+    .contenedor {
+        max-height: 1400px;
+    }    
 }
 
 .contenedor-grid {
@@ -164,12 +170,14 @@ h4 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 2fr) repeat(4, 1fr);
     row-gap: 2rem;
-    height: 992px;
+    height: 844px;
+    /* height: 600px; */
 }
 
 @media (min-width: 768px) {
     .contenedor-grid {
-        height: 1200px;
+        /* height: 992px; */
+        height: 1024px;
     }
 }
 
@@ -198,12 +206,17 @@ h4 {
 /*** Sombras ***/
 .sombra1 {
     position: absolute;
-    grid-row: 4 / 5;
+    grid-row: 4 / 6;
     background-color: var(--sombra);
     width: 100%;
     height: 100%;
 }
 
+@media (min-width: 768px) { 
+    .sombra1 {
+        grid-row: 5 / 6;
+    }
+}
 @media (min-width: 992px) {
     .sombra1 {
         grid-row: 4 / 5;
@@ -233,8 +246,7 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
-    /* height: 85rem; */
+    max-width: 100%;
 }
 
 .perfilCorporativo {
@@ -251,88 +263,43 @@ h4 {
 
 .servicios {
     background-image: url(../img/Esporos05.jpg);
+    background-position: center center;
 }
 
 .especializados {
     background-image: url(../img/Esporos06.jpg);
+    background-position: right center;
+    /* background-size: 100%; */
+    background-size: contain;
+    /* max-height: 100%; */
+}
+@media (min-width: 768px) { 
+    .especializados {
+        background-size: cover;
+    }
 }
 
 /*************** CONTENIDOS ***************/
 /*** Logo ***/
 .logo {
-    grid-row: 3 / 4;
-    max-width: 40%;
+    /* grid-row: 3 / 5; */
+    max-width: 80%;
     margin: 0 auto;
-    padding-top: 5rem;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        max-width: 30%;
-    }
-}
-
-@media (min-width: 992px) {
-    .logo {
-        grid-column: 2 / 4;
-        grid-row: 4 / 5;
-        max-width: 100%;
-        padding: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .logo {
-        max-width: 100%;
-    }
+    padding-top: 25rem;
 }
 
 /*** PERFIL CORPORATIVO ***/
 .contenidoPerfil {
-    grid-row: 4 / 5;
+    /* grid-row: 4 / 5; */
     color: var(--blanco);
     text-align: justify;
     font-size: 1.7rem;
     margin: 0;
-    padding: 4rem;
+    /* padding: 2rem 4rem; */
 }
 
 .contenidoPerfil span {
     color: var(--activo);
-}
-
-@media (min-width: 768px) {
-    .contenidoPerfil {
-        font-size: 2.5rem;
-        padding: 5rem 8rem;
-        align-items: center;
-    }
-}
-
-@media (min-width: 992px) {
-    .contenidoPerfil {
-        grid-column: 5 / 10;
-        grid-row: 4 / 5;
-        height: max-content;
-        text-align: justify;
-        padding: 0;
-        margin: 0;
-        font-size: 2rem;
-        color: var(--blanco);
-    }
-}
-
-@media (min-width: 1200px) {
-    .contenidoPerfil {
-        /* grid-column: 6 / 10; */
-        font-size: 2.8rem;
-    }
-}
-
-@media (min-width: 1700px) {
-    .contenidoPerfil {
-        font-size: 3.5rem;
-    }
 }
 
 /*** DÓNDE ESTAMOS ***/
@@ -349,48 +316,6 @@ h4 {
     grid-row: 5 / 6;
     max-width: 70%;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .dondeEstamos__contenido {
-        grid-row: 4 / 5;
-        font-size: 2.5rem;
-        /* padding: 0 2rem; */
-        /* align-items: center; */
-    }
-
-    .dondeEstamos__imagen {
-        /* grid-row: 6 / 7; */
-        max-width: 50%;
-    }
-}
-
-@media (min-width: 992px) {
-    .dondeEstamos__contenido {
-        grid-column: 3 / 10;
-        grid-row: 2 / 3;
-        font-size: 2.5rem;
-    }
-
-    .dondeEstamos__imagen {
-        grid-column: 6 / 10;
-        grid-row: 4 / 5;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 1200px) {
-    .dondeEstamos__contenido {
-        grid-column: 5 / 10;
-        grid-row: 2 / 3;
-    }
-}
-
-@media (min-width: 1700px) {
-    .dondeEstamos__contenido {
-        font-size: 3rem;
-    }
 }
 
 /*** QUÉ OFRECEMOS ***/
@@ -447,106 +372,6 @@ h4 {
     grid-column: 3 / 4;
     max-width: 80%;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .queOfrecemos__contenidoCentral {
-        font-size: 3rem;
-    }
-
-    .queOfrecemos__encabezado {
-        padding-left: 7rem;
-        padding-right: 5rem;
-    }
-
-    .queOfrecemos__encabezado-h4,
-    .queOfrecemos__encabezado-h4--c2 {
-        font-size: 2rem;
-        margin: 0;
-    }
-
-    .queOfrecemos__encabezado-logo {
-        width: 50%;
-    }
-
-    .queOfrecemos__contenido {
-        font-size: 2.5rem;
-        padding: 0 7rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .queOfrecemos-c1 {
-        grid-column: 2 / 4;
-        grid-row: 2 / 4;
-    }
-
-    .queOfrecemos__contenidoCentral {
-        display: flex;
-        align-items: center;
-        grid-column: 4 / 6;
-        grid-row: 3 / 5;
-        background-color: var(--primario);
-        height: 80%;
-        font-size: 1.5rem;
-        text-align: left;
-        padding-left: 1.5rem;
-    }
-
-    .queOfrecemos-c2 {
-        grid-column: 6 / 8;
-        grid-row: 3 / 5;
-        padding-right: 1rem;
-    }
-
-    .queOfrecemos__encabezado {
-        display: block;
-        font-size: 4rem;
-        padding: 0;
-    }
-
-    .queOfrecemos__encabezado-h4,
-    .queOfrecemos__encabezado-h4--c2 {
-        font-size: 1rem;
-        text-align: left;
-    }
-
-    .queOfrecemos__encabezado-logo {
-        display: none;
-    }
-
-    .queOfrecemos__contenido {
-        font-size: 1.8rem;
-        text-align: left;
-        padding: 0;
-    }
-
-    .queOfrecemos-logo {
-        display: block;
-        grid-column: 8 / 10;
-        grid-row: 3 / 5;
-        max-width: 100%;
-        padding: 0;
-    }
-
-    .sombra2 {
-        grid-row: 3 / 5;
-    }
-}
-
-@media (min-width: 1200px) {
-    .queOfrecemos-c2 {
-        padding-right: 2rem;
-    }
-
-    .queOfrecemos__contenidoCentral {
-        font-size: 2rem;
-        padding-left: 3rem;
-    }
-
-    .queOfrecemos__contenido {
-        font-size: 2.6rem;
-    }
 }
 
 /*** SERVICIOS ***/
@@ -716,8 +541,8 @@ h4 {
 
 /*** SERVICIOS ESPECIALIZADOS ***/
 .especializados-contenido {
-    grid-row: 4 / 5;
-    color: var(--blanco);
+    grid-row: 6 / 7;
+    color: var(--resaltado);
     text-align: justify;
     font-size: 3rem;
     margin: 0;
@@ -726,6 +551,8 @@ h4 {
 
 @media (min-width: 768px) {
     .especializados-contenido {
+        grid-row: 5 / 6;
+        color: var(--blanco);
         font-size: 5.8rem;
         padding: 5rem 8rem;
         align-items: center;
@@ -738,10 +565,9 @@ h4 {
         grid-row: 4 / 5;
         height: max-content;
         font-size: 5rem;
-        color: var(--blanco);
+        /* color: var(--blanco); */
         text-align: justify;
         padding: 0;
-        /* margin-right: 3rem; */
         margin: 0;
     }
 }
@@ -754,7 +580,7 @@ h4 {
 
 /*************** FOOTER ***************/
 .footer {
-    background-color: var(--resaltado);
+    background-color: var(--bg-footer);
     padding: 2rem;
 }
 
